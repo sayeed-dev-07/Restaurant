@@ -25,7 +25,7 @@ module.exports = {
       template: "./src/template.html",
     }),
     new CopyWebpackPlugin({
-        patterns: [{ from: "public", to: "dist/public" }],
+        patterns: [{ from: "public", to: "public" }],
       }),
   ],
   module: {
