@@ -15,11 +15,11 @@ export default function createMenu(){
             const card2 = document.createElement('div')
             const card3 = document.createElement('div')
             const imgCard1 = document.createElement('img');
-            imgCard1.src = '/photos/biryani.jpg'
+            imgCard1.src = '/public/photos/biryani.jpg'
             const imgCard2 = document.createElement('img');
-            imgCard2.src = '/photos/kebab.jpg'
+            imgCard2.src = '/public/photos/kebab.jpg'
             const imgCard3 = document.createElement('img');
-            imgCard3.src = '/photos/sushi.jpg'
+            imgCard3.src = '/public/photos/sushi.jpg'
             card1.classList.add('card')
             card2.classList.add('card')
             card3.classList.add('card')
@@ -109,17 +109,17 @@ export default function createMenu(){
 
 
             const img1 = document.createElement('img')
-            img1.src = '/photos/pizza.jpg'
+            img1.src = '/public/photos/pizza.jpg'
             const img2 = document.createElement('img')
-            img2.src = '/photos/burger.jpg'
+            img2.src = '/public/photos/burger.jpg'
             const img3 = document.createElement('img')
-            img3.src = '/photos/cookies.jpg'
+            img3.src = '/public/photos/cookies.jpg'
             const img4 = document.createElement('img')
-            img4.src = '/photos/drinks.jpg'
+            img4.src = '/public/photos/drinks.jpg'
             const img5 = document.createElement('img')
-            img5.src = '/photos/noodles.jpg'
+            img5.src = '/public/photos/noodles.jpg'
             const img6 = document.createElement('img')
-            img6.src = '/photos/kebab.jpg'
+            img6.src = '/public/photos/kebab.jpg'
 
 
             const allText1 = document.createElement('div')
