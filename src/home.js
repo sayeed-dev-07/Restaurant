@@ -5,7 +5,7 @@ export default  function createHome(){
             const textContainer = document.createElement('div');
             const photoContainer = document.createElement('div');
             const video = document.createElement('video')
-            video.src = '/public/video/video.mp4'
+            video.src = '../public/video/video.mp4'
             video.loop = true;
             video.autoplay = true;
             video.muted = true;
