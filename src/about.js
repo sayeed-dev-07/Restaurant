@@ -26,9 +26,9 @@ export default  function createAbout(){
             const img2 = document.createElement('img');
             const img3 = document.createElement('img');
 
-            img1.src = '/public/photos/owner.webp'
-            img2.src = '/public/photos/sanji.webp'
-            img3.src = '/public/photos/waiter.jpg'
+            img1.src = '/photos/owner.webp'
+            img2.src = '/photos/sanji.webp'
+            img3.src = '/photos/waiter.jpg'
 
 
             const workerText1 = document.createElement('div'); 
