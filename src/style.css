@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../public/fonts/sw.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+:root{
+    --title-font: MyFont, sans-serif;
+    --main-background:#ffdfd2;
+}
+
+*{
+    font-family: var(--title-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body, html{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#navbar{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+}
+
+/** 
+home container style sheet
+**/
+
+.container{
+    height: calc(100vh - calc(13vh + 2rem));
+}
+.sub-container{
+    background: linear-gradient(135deg, #ffded1, white);
+    height: inherit;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 3rem 7rem;
+}
+#img{
+    height: 100px;
+    width: 100px;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#img:hover{
+    box-shadow: 3px 3px 3px rgb(63, 59, 59);
+    transform: scale(1.03);
+}
+.sub-nav > button{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transition: border-bottom 0.1s ease;
+    
+}
+.sub-nav .selected{
+    border-bottom: 5px solid rgb(27, 24, 24);
+}
+.sub-nav{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.signupBtn{
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: var(--main-background);
+    box-shadow: 3px 3px 3px rgb(228, 135, 135);
+}
+.signupBtn:hover{
+    box-shadow: 3px 3px 3px black;
+}
+.sub-nav > button:hover{
+    transform: scale(1.2);
+}
+.text{
+    text-align: start;
+    width: 60vw;
+    margin-top: -4rem ;
+    gap: 3rem;
+}
+.text .headline{
+    font-size: 2.5rem;
+    
+}
+.text span{
+    color: rgb(56, 175, 222);
+    font-weight: 800;
+    
+}
+.order{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    background-color: var(--main-background);
+    box-shadow: 3px 3px 3px rgb(228, 135, 135);
+    cursor: pointer;
+
+}
+.order:hover{
+    box-shadow: 3px 3px 3px black;
+}
+.extra-text{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-family: "Poetsen One", serif;
+}
+.photo{
+    width: 40vw;
+}
+.photo video{
+    height: inherit;
+    width: 35vw;
+    border-radius: 1rem;
+}
+
+
+
+/* menu items styles */
+.sub-container-2{
+    padding: 2rem 10rem;
+    background-color: var(--main-background);
+    height: auto;
+}
+
+.highlighted-text{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.highlighted-text > span{
+    color: crimson;
+}
+.card{
+    text-align: center;
+    width: 400px;
+}
+.top-sell img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    object-fit: cover;
+    
+}
+.top-sell-text{
+    font-size: 1.8rem;
+    color: rgb(63, 169, 211);
+    margin-bottom: 0.4rem;
+}
+.order-now{
+    color: rgb(182, 30, 60);
+    font-size: large;
+    cursor: pointer;
+}
+.top-sell-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    row-gap: 3rem;
+    column-gap: 8rem;
+    margin: 0px auto;
+}
+.regular-menu{
+    margin-top: 6rem;
+    
+}
+.regular-card{
+    width: 380px;
+    text-align: start;
+    background-color: white;
+    border-radius: 1rem;
+    
+}
+.dish-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1rem auto;
+    row-gap: 2rem;
+    column-gap: 5rem;
+}
+.regular-card:hover{
+    box-shadow: 6px 6px 6px rgb(72, 50, 50);
+
+}
+
+.img-container{
+    width: 100%;
+    
+    
+}
+.img-container img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+.all-text{
+    padding: 1rem 1.2rem;
+}
+.dish-name{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy{
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    background-color: var(--main-background);
+    box-shadow: 3px 3px 3px rgb(228, 135, 135);
+    cursor: pointer;
+    color: rgb(15, 18, 15);
+}
+.buy:hover{
+    box-shadow: 3px 3px 3px black;
+    color: rgb(223, 51, 51);
+    
+}
+.price{
+    font-size: 1.3rem;
+    color: crimson;
+}
+.sub-container-3{
+    text-align: center;
+    padding: 5rem 8rem;
+}
+.title-crew{
+    font-size: 3rem;
+    color: crimson;
+    margin-bottom: 5rem;
+}
+.staff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.coworker{
+    height: 380px;
+    width: 280px;
+    padding: 1rem;
+    
+}
+.coworker img{
+    height: 250px;
+    border-radius: 10rem;
+}
+.worker-text{
+    text-align: center;
+    height: 100px;
+    margin-top: 1rem;
+}
+.worker-name{
+    font-size: 2rem;
+    color: rgb(55, 155, 195);
+    margin-bottom: 0.9rem;
+}
+.position{
+    font-size: 1.4rem;
+}
